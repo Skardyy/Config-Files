@@ -69,3 +69,5 @@ vim.api.nvim_set_keymap('n', '<leader>ff', '<cmd>Telescope find_files<CR>', {nor
 vim.api.nvim_set_keymap('n', '<leader>to', '<cmd>NvimTreeOpen<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<leader>tc', '<cmd>NvimTreeClose<CR>', {noremap = true, silent = true})
 
+-- Window --
+vim.wo.number = true
