@@ -30,9 +30,17 @@ require('packer').startup(function()
 end)
 
 -- Additional configurations go here --
+
 -- Languages --
 local lspconfig = require('lspconfig')
 lspconfig.pyright.setup {} --python, npm i pyright -g
+lspconfig.rust_analyzer.setup {
+  -- Server-specific settings. See `:help lspconfig-setup`
+  settings = {
+    ['rust-analyzer'] = {},
+  },
+} --rust, make sure rustup rust-analyzer is done by checking rust-analyzer --version
+
 -- Other --
 require('lualine').setup()
 require('nvim-tree').setup()
