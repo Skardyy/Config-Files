@@ -12,3 +12,4 @@ copy the init.lua to
 ### Remakrs  
 * use :PackerSync for installing all the plugins
 * make sure to install the dependencies for the lsp
+* make sure to put files inside folders, so the lsp wont load all the servers

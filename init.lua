@@ -10,66 +10,96 @@ end
 require('packer').startup(function()
     use 'wbthomason/packer.nvim' -- Packer can manage itself
     use "olimorris/onedarkpro.nvim" -- Theme
+
     use {
 	    'kyazdani42/nvim-tree.lua',
 	    requires = {'kyazdani42/nvim-web-devicons'}
-    }-- File tree
-    use 'neovim/nvim-lspconfig' -- Common configurations for LSP
-    use 'hrsh7th/nvim-compe' -- Autocompletion
-    use 'nvim-treesitter/nvim-treesitter' -- Syntax highlighting
-    use 'dense-analysis/ale' -- Linting and fixing
+    } -- File tree
+
+    use 'neovim/nvim-lspconfig' -- lsp
+    use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'} -- bufferline
+
+    use 'hrsh7th/nvim-cmp' -- code completion
+    use 'hrsh7th/cmp-nvim-lsp' -- LSP source
+    use 'hrsh7th/cmp-buffer' -- Buffer source
+
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     } -- Statusline
+
     use {
         'nvim-telescope/telescope.nvim',
         requires = { {'nvim-lua/plenary.nvim'} }
     } -- File explorer
-    vim.cmd("colorscheme onedark")
-end)
 
--- Additional configurations go here --
+    use {
+    	'nvim-treesitter/nvim-treesitter',
+    	run = ':TSUpdate'
+    } -- Syntax highlighting
+
+    use {
+    	"jose-elias-alvarez/null-ls.nvim",
+    	requires = { "nvim-lua/plenary.nvim" },
+    } -- non lsp sources
+
+    use {
+  	'hrsh7th/vim-vsnip',
+ 	 requires = { 'hrsh7th/vim-vsnip-integ' }
+    }
+
+end)
 
 -- Languages --
 local lspconfig = require('lspconfig')
-lspconfig.pyright.setup {} --python, npm i pyright -g
+lspconfig.pyright.setup {} -- npm i pyright -g
 lspconfig.rust_analyzer.setup {
-  -- Server-specific settings. See `:help lspconfig-setup`
   settings = {
-    ['rust-analyzer'] = {},
+    ['rust-analyzer'] = {}, -- rustup component add rust-analyzer
   },
-} --rust, make sure rustup rust-analyzer is done by checking rust-analyzer --version
-
--- Other --
-require('lualine').setup()
-require('nvim-tree').setup()
-require('compe').setup{
-	enabled = true;
-	autocomplete = true;
-	debug = false;
-	min_length = 1;
-	preselect = 'enable';
-	throttle_time = 80;
-	source_timeout = 200;
-	incomplete_delay = 400;
-	max_abbr_width = 100;
-	max_kind_width = 100;
-	max_menu_width = 100;
-	documentation = true;
-
-	source = {
-		path = true;
-		buffer = true;
-		calc = true;
-		nvim_lsp = true;
-		nvim_lua = true;
-		spell = true;
-		tags = true;
-		snippets_nvim = true;
-		treesitter = true;
-	};
 }
+
+-- Configs --
+require('lualine').setup()
+require('bufferline').setup{}
+require('nvim-tree').setup()
+require('nvim-treesitter.configs').setup {
+  ensure_installed = {'python', 'rust', 'css', 'html', 'javascript', 'svelte',
+                      'bash', 'typescript', 'lua', 'tsx',
+	              'c_sharp', 'c', 'cpp'},
+  highlight = {
+    enable = true,
+  },
+}
+
+local cmp = require('cmp')
+cmp.setup{
+  snippet = {
+    expand = function(args) vim.fn["vsnip#anonymous"](args.body) end
+  },
+  mapping = cmp.mapping.preset.insert({
+    ['<C-Space>'] = cmp.mapping.complete(),
+    ['<Down>'] = cmp.mapping.select_next_item(),
+    ['<Up>'] = cmp.mapping.select_prev_item(),
+    ['<CR>'] = cmp.mapping.confirm({select = true}),
+    ['<C-e>'] = cmp.mapping.close()
+  }),
+  sources = {
+    { name = 'nvim_lsp' },
+    { name = 'buffer' },
+  }
+}
+
+local null_ls = require('null-ls')
+null_ls.setup{
+    sources = {
+        null_ls.builtins.formatting.black,     -- Pip install black
+        null_ls.builtins.formatting.rustfmt,   -- Rustup component add rustfmt
+        null_ls.builtins.formatting.prettier,  -- npm i -g prettier
+        null_ls.builtins.formatting.prettierd, -- idk lol
+    },
+}
+
 
 -- Binds --
 vim.g.mapleader = " "
@@ -79,3 +109,5 @@ vim.api.nvim_set_keymap('n', '<leader>tc', '<cmd>NvimTreeClose<CR>', {noremap = 
 
 -- Window --
 vim.wo.number = true
+vim.cmd("colorscheme onedark")
+vim.opt.termguicolors = true
