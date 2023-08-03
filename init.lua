@@ -106,6 +106,8 @@ vim.g.mapleader = " "
 vim.api.nvim_set_keymap('n', '<leader>ff', '<cmd>Telescope find_files<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<leader>to', '<cmd>NvimTreeOpen<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<leader>tc', '<cmd>NvimTreeClose<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<leader>e', '$', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>b', '0', { noremap = true })
 
 -- Window --
 vim.wo.number = true
