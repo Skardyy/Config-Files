@@ -13,3 +13,22 @@ copy the init.lua to
 * use :PackerSync for installing all the plugins
 * make sure to install the dependencies for the lsp
 * make sure to put files inside folders, so the lsp wont load all the servers
+
+## Install OhMyPosh  
+* winget install JanDeDobbeleer.OhMyPosh -s winget
+* New-Item -Path $PROFILE -Type File -Force
+* notepad $PROFILE
+* copy your random theme to the file
+* changet the code of the theme to the one in the repo
+
+## Install dracula theme for windows terminal  
+* go to settings > defaults
+* open the json file
+* copy the json file into the colorschemes section
+* change the theme
+
+## Nerd Font  
+* goto [Nerd font repo's latest release](https://github.com/ryanoasis/nerd-fonts/releases/latest)
+* download the font you want (fira code is cool)
+* select all and install
+* go to windows terminal and change the font under settings > default > font face
