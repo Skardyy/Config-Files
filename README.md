@@ -24,7 +24,12 @@ notepad $PROFILE
 ```
 * put a theme inside the $profile file
 * edit the code of the theme to be the json in the repo
-
+example:
+```diff
+"oh-my-posh init pwsh --config 'C:\Users\meron\AppData\Local\Programs\oh-my-posh\themes\ys.omp.json' | Invoke-Expression" > $PROFILE
+```
+then open ys theme file by doing Get-PoshTheme > ctrl left click on ys.  
+finally copy the json into that file
 ## Install dracula theme for windows terminal  
 * go to settings > defaults
 * open the json file
