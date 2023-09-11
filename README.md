@@ -15,11 +15,15 @@ copy the init.lua to
 * make sure to put files inside folders, so the lsp wont load all the servers
 
 ## Install OhMyPosh  
-* winget install JanDeDobbeleer.OhMyPosh -s winget
-* New-Item -Path $PROFILE -Type File -Force
-* notepad $PROFILE
-* copy your random theme to the file
-* changet the code of the theme to the one in the repo
+```diff
+winget install JanDeDobbeleer.OhMyPosh -s winget
+New-Item -Path $PROFILE -Type File -Force
+oh-my-posh init pwsh | Invoke-Expression
+Get-PoshThemes
+notepad $PROFILE
+```
+* put a theme inside the $profile file
+* edit the code of the theme to be the json in the repo
 
 ## Install dracula theme for windows terminal  
 * go to settings > defaults
