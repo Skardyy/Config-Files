@@ -1,5 +1,5 @@
 shell = "pwsh"
-
+# code %APPDATA%\alacritty\alacritty.toml
 # Default colors
 [colors.primary]
 background = '#161925'
