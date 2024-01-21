@@ -1,0 +1,49 @@
+shell = "pwsh"
+
+# Default colors
+[colors.primary]
+background = '#161925'
+foreground = '#FDFDFD'
+
+# Normal colors
+[colors.normal]
+black   = '#000000'
+red     = '#ff5555'
+green   = '#50fa7b'
+yellow  = '#f1fa8c'
+blue    = '#bd93f9'
+magenta = '#ff79c6'
+cyan    = '#8BE9FD'
+white   = '#bbbbbb'
+
+# Bright colors
+[colors.bright]
+black   = '#555555'
+red     = '#ff5555'
+green   = '#50fa7b'
+yellow  = '#f1fa8c'
+blue    = '#BD93F9'
+magenta = '#FF69B4'
+cyan    = '#8BE9FD'
+white   = '#ffffff'
+
+[font.normal]
+family = "FiraCode Nerd Font"
+style = "Medium"
+
+[font.bold]
+family = "FiraCode Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "FiraCode Nerd Font"
+style = "Italic"
+
+[cursor]
+style = "Beam"
+
+[window]
+dynamic_title = true
+opacity = 0.95
+
+
