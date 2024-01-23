@@ -46,4 +46,8 @@ style = "Beam"
 dynamic_title = true
 opacity = 0.95
 
+[window.dimensions]
+columns = 150
+lines = 50
+
 
