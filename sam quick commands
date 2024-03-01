@@ -7,6 +7,7 @@ sam add -alias fe "fzf --preview | scb"
 sam add -alias gn genshin-impact
 sam add -alias hsr honkai-star-rail
 sam add -alias vd vivaldi
+sam add -alias egl epic-games-launcher
 
 sam add -path pwsh $profile
 sam omp -path omp "~\AppData\Local\Programs\oh-my-posh\themes\myTheme.omp.json"
