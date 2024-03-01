@@ -36,3 +36,8 @@ example:
 * download the font
 * install the neon font
 * go to the shell config file and apply it
+
+## install alarcitty
+* goto [alarcitty latest release](https://github.com/alacritty/alacritty/releases/latest)
+* download and install it
+* copy the alarcitty.toml content into %APPDATA%\alacritty\alacritty.toml
