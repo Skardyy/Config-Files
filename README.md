@@ -33,7 +33,7 @@ notepad $profile
 ```
 
 ## install github monospace font (neon) 
-* goto [Github monospace website]([https://github.com/ryanoasis/nerd-fonts/releases/latest](https://monaspace.githubnext.com))
+* goto [Github monospace website](https://monaspace.githubnext.com)
 * download the font
 * install the neon font
 * go to the shell config file and apply it
