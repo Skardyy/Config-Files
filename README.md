@@ -32,7 +32,7 @@ example:
 ```
 
 ## install github monospace font (neon) from the nerd repo
-* goto [nerd repo]([https://monaspace.githubnext.com](https://github.com/ryanoasis/nerd-fonts/releases/latest))
+* goto [nerd repo](https://github.com/ryanoasis/nerd-fonts/releases/latest)
 * download the monaspace font
 * install the neon mono font
 * go to the shell config file and apply it
