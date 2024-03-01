@@ -28,8 +28,7 @@ notepad ~\AppData\Local\Programs\oh-my-posh\themes\myTheme.omp.json
 * finally change the shell file
 example:
 ```diff
-notepad $profile
-"oh-my-posh init pwsh --config 'C:\Users\meron\AppData\Local\Programs\oh-my-posh\themes\myTheme.omp.json' | Invoke-Expression" > $PROFILE
+"oh-my-posh init pwsh --config '~\AppData\Local\Programs\oh-my-posh\themes\myTheme.omp.json' | Invoke-Expression" > $PROFILE
 ```
 
 ## install github monospace font (neon) 
