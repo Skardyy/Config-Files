@@ -19,25 +19,21 @@ copy the init.lua to
 winget install JanDeDobbeleer.OhMyPosh -s winget
 New-Item -Path $PROFILE -Type File -Force
 oh-my-posh init pwsh | Invoke-Expression
-Get-PoshThemes
-notepad $PROFILE
 ```
-* put a theme inside the $profile file
-* edit the code of the theme to be the json in the repo
+* create a custom theme
+```diff
+notepad ~\AppData\Local\Programs\oh-my-posh\themes\myTheme.omp.json
+```
+* paste the file in here
+* finally change the shell file
 example:
 ```diff
-"oh-my-posh init pwsh --config 'C:\Users\meron\AppData\Local\Programs\oh-my-posh\themes\ys.omp.json' | Invoke-Expression" > $PROFILE
+notepad $profile
+"oh-my-posh init pwsh --config 'C:\Users\meron\AppData\Local\Programs\oh-my-posh\themes\myTheme.omp.json' | Invoke-Expression" > $PROFILE
 ```
-then open ys theme file by doing Get-PoshTheme > ctrl left click on ys.  
-finally copy the json into that file
-## Install dracula theme for windows terminal  
-* go to settings > defaults
-* open the json file
-* copy the json file into the colorschemes section
-* change the theme
 
-## Nerd Font  
-* goto [Nerd font repo's latest release](https://github.com/ryanoasis/nerd-fonts/releases/latest)
-* download the font you want (fira code is cool)
-* select all and install
-* go to windows terminal and change the font under settings > default > font face
+## install github monospace font (neon) 
+* goto [Github monospace website]([https://github.com/ryanoasis/nerd-fonts/releases/latest](https://monaspace.githubnext.com))
+* download the font
+* install the neon font
+* go to the shell config file and apply it
