@@ -31,10 +31,10 @@ example:
 "oh-my-posh init pwsh --config '~\AppData\Local\Programs\oh-my-posh\themes\myTheme.omp.json' | Invoke-Expression" > $PROFILE
 ```
 
-## install github monospace font (neon) 
-* goto [Github monospace website](https://monaspace.githubnext.com)
-* download the font
-* install the neon font
+## install github monospace font (neon) from the nerd repo
+* goto [nerd repo]([https://monaspace.githubnext.com](https://github.com/ryanoasis/nerd-fonts/releases/latest))
+* download the monaspace font
+* install the neon mono font
 * go to the shell config file and apply it
 
 ## install alarcitty
