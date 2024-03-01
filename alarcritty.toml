@@ -28,15 +28,15 @@ cyan    = '#8BE9FD'
 white   = '#ffffff'
 
 [font.normal]
-family = "FiraCode Nerd Font"
+family = "Monaspace Neon"
 style = "Medium"
 
 [font.bold]
-family = "FiraCode Nerd Font"
+family = "Monospace Neon"
 style = "Bold"
 
 [font.italic]
-family = "FiraCode Nerd Font"
+family = "Monospace Neon"
 style = "Italic"
 
 [cursor]
@@ -49,5 +49,3 @@ opacity = 0.95
 [window.dimensions]
 columns = 150
 lines = 50
-
-
