@@ -45,10 +45,14 @@ example:
 ## install taskbar tools
 * install ttb from [microsoft store](https://apps.microsoft.com/detail/9pf4kz2vn4w9?hl=en-US&gl=US)
 * install taskbarx zip from [github](https://github.com/ChrisAnd1998/TaskbarX/releases/latest)
-* put the taskbarx app inside the startup apps (eg shell:startup in windows)
+* put the taskbarx app inside the startup apps (eg shell:startup)
 
 ## install lunarvim
 * goto [lunarvim website](https://www.lunarvim.org/docs/installation)
 * install all the prequisites
-* to install mgwin-w64 follow [vscode guide](https://code.visualstudio.com/docs/cpp/config-mingw)
+* to install mgwin-w64 follow this [guide](https://code.visualstudio.com/docs/cpp/config-mingw)
 * finally edit the config file at %localappdata%\lvim\config.lua to match the file in this repo, and do lvim to the init stage
+
+## install fzf and bat
+* winget install fzf
+* winget install sharkdp.bat
