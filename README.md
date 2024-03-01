@@ -41,3 +41,8 @@ example:
 * goto [alarcitty latest release](https://github.com/alacritty/alacritty/releases/latest)
 * download and install it
 * copy the alarcitty.toml content into %APPDATA%\alacritty\alacritty.toml
+
+## install taskbar tools
+* install ttb from [microsoft store](https://apps.microsoft.com/detail/9pf4kz2vn4w9?hl=en-US&gl=US)
+* install taskbarx zip from [github](https://github.com/ChrisAnd1998/TaskbarX/releases/latest)
+* put the taskbarx app inside the startup apps (eg shell:startup in windows)
