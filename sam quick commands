@@ -1,9 +1,9 @@
 sam add -alias aqw artix-game-launcher
 sam add -alias dc discord
-sam add -alias de "fzf --preview | split-path | scb"
-sam add -alias ed "fzf --preview | split-path | split-path | % { code $ }"
-sam add -alias ef "fzf --preview | % { code $_ }"
-sam add -alias fe "fzf --preview | scb"
+sam add -alias de "fzf --preview 'bat --color=always {}' | split-path | scb"
+sam add -alias ed "fzf --preview 'bat --color=always {}' | split-path | split-path | % { code $ }"
+sam add -alias ef "fzf --preview 'bat --color=always {}' | % { code $_ }"
+sam add -alias fe "fzf --preview 'bat --color=always {}' | scb"
 sam add -alias gn genshin-impact
 sam add -alias hsr honkai-star-rail
 sam add -alias vd vivaldi
