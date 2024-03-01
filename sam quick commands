@@ -1,0 +1,13 @@
+sam add -alias aqw artix-game-launcher
+sam add -alias dc discord
+sam add -alias de "fzf --preview | split-path | scb"
+sam add -alias ed "fzf --preview | split-path | split-path | % { code $ }"
+sam add -alias ef "fzf --preview | % { code $_ }"
+sam add -alias fe "fzf --preview | scb"
+sam add -alias gn genshin-impact
+sam add -alias hsr honkai-star-rail
+sam add -alias vd vivaldi
+
+sam add -path pwsh $profile
+sam omp -path omp "~\AppData\Local\Programs\oh-my-posh\themes\myTheme.omp.json"
+sam add -path alar "%APPDATA%\alacritty\alacritty.toml"
