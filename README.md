@@ -50,6 +50,5 @@ example:
 ## install lunarvim
 * goto [lunarvim website](https://www.lunarvim.org/docs/installation)
 * install all the prequisites
-#### mgwin-w64
-  * follow [vscode guide](https://code.visualstudio.com/docs/cpp/config-mingw) for installing mgwin
-* finally edit the config file at %localappdata%\lvim\config.lua, copy the file from the repo
+* to install mgwin-w64 follow [vscode guide](https://code.visualstudio.com/docs/cpp/config-mingw)
+* finally edit the config file at %localappdata%\lvim\config.lua to match the file in this repo, and do lvim to the init stage
