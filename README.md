@@ -46,3 +46,10 @@ example:
 * install ttb from [microsoft store](https://apps.microsoft.com/detail/9pf4kz2vn4w9?hl=en-US&gl=US)
 * install taskbarx zip from [github](https://github.com/ChrisAnd1998/TaskbarX/releases/latest)
 * put the taskbarx app inside the startup apps (eg shell:startup in windows)
+
+## install lunarvim
+* goto [lunarvim website](https://www.lunarvim.org/docs/installation)
+* install all the prequisites
+#### mgwin-w64
+  * follow [vscode guide](https://code.visualstudio.com/docs/cpp/config-mingw) for installing mgwin
+* finally edit the config file at %localappdata%\lvim\config.lua, copy the file from the repo
