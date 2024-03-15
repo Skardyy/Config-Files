@@ -19,38 +19,44 @@ config.window_frame = {
     active_titlebar_bg = '#000',
     inactive_titlebar_bg = '#000'
 }
---[[ config.color_scheme = 'Dracula' ]]
-config.colors = { --maetrial ocean custom
-    foreground = "#fff",
-    background = "#0f111a",
-    cursor_bg = "#ffcc00",
-    cursor_border = "#ffcc00",
-    cursor_fg = "#0f111a",
-    selection_bg = "#1f2233",
-    selection_fg = "#8f93a2",
-
-    ansi = { "#000", "#ff5370", "#81fc89", "#ffcb6b", "#82aaff", "#c792ea", "#89ddff", "#ffffff" },
-    brights = { "#546e7a", "#ff5370", "#81fc89", "#ffcb6b", "#82aaff", "#c792ea", "#89ddff", "#ffffff" },
-
-    tab_bar = {
-        background = '#0b0022',   -- This is the color of the strip that goes along the top of the window
-        active_tab = {
-            bg_color = '#0f111a', -- Matches your background color
-            fg_color = '#fff',    -- Matches your foreground color
-            italic = false,
-        },
-        inactive_tab = {
-            bg_color = '#000', -- black
-            fg_color = '#fff', -- Matches your foreground color
-            italic = false,
-        },
-        inactive_tab_hover = {
-            bg_color = '#1f2233', -- A lighter shade to act as a divider
-            fg_color = '#fff',    -- Matches your foreground color
-            italic = true,
-        }
-    },
+-- config.color_scheme = 'catppuccin-mocha'
+local CATPcolor = wezterm.color.get_builtin_schemes()['catppuccin-mocha']
+CATPcolor.ansi[1] = '#000'
+config.color_schemes = {
+  ['CATP'] = CATPcolor,
 }
+config.color_scheme = 'CATP'
+-- config.colors = { --maetrial ocean custom
+--     foreground = "#fff",
+--     background = "#0f111a",
+--     cursor_bg = "#ffcc00",
+--     cursor_border = "#ffcc00",
+--     cursor_fg = "#0f111a",
+--     selection_bg = "#1f2233",
+--     selection_fg = "#8f93a2",
+
+--     ansi = { "#000", "#ff5370", "#81fc89", "#ffcb6b", "#82aaff", "#c792ea", "#89ddff", "#ffffff" },
+--     brights = { "#546e7a", "#ff5370", "#81fc89", "#ffcb6b", "#82aaff", "#c792ea", "#89ddff", "#ffffff" },
+
+--     tab_bar = {
+--         background = '#0b0022',   -- This is the color of the strip that goes along the top of the window
+--         active_tab = {
+--             bg_color = '#0f111a', -- Matches your background color
+--             fg_color = '#fff',    -- Matches your foreground color
+--             italic = false,
+--         },
+--         inactive_tab = {
+--             bg_color = '#000', -- black
+--             fg_color = '#fff', -- Matches your foreground color
+--             italic = false,
+--         },
+--         inactive_tab_hover = {
+--             bg_color = '#1f2233', -- A lighter shade to act as a divider
+--             fg_color = '#fff',    -- Matches your foreground color
+--             italic = true,
+--         }
+--     },
+-- }
 
 config.leader = { key = "Space", mods = "SHIFT" }
 config.keys = {
