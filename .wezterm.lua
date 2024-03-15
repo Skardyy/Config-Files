@@ -4,8 +4,9 @@ local config = wezterm.config_builder()
 config.default_prog = { 'pwsh' }
 config.default_cwd = "~"
 
-config.font = wezterm.font('Monaspace Neon', { weight = 'Bold', italic = false })
+config.font = wezterm.font('MonaspiceNe Nerd Font Mono', { weight = 'Medium', italic = false })
 config.font_size = 11
+config.custom_block_glyphs = false
 
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
 config.default_cursor_style = 'SteadyBar'
