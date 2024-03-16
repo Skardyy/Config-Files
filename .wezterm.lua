@@ -13,8 +13,8 @@ config.font = wezterm.font({
 config.font_size = 11
 config.custom_block_glyphs = false
 config.freetype_load_flags = 'NO_HINTING'
-
 config.front_end = "OpenGL"
+
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
 config.default_cursor_style = 'SteadyBar'
 config.use_fancy_tab_bar = true
@@ -29,74 +29,17 @@ config.window_frame = {
 }
 
 -- config.color_scheme = 'catppuccin-mocha'
--- local CATPcolor = wezterm.color.get_builtin_schemes()['catppuccin-mocha']
--- CATPcolor.ansi[1] = '#000'
+-- local catpcolor = wezterm.color.get_builtin_schemes()['catppuccin-mocha']
+-- catpcolor.ansi[1] = '#000'
 -- config.color_schemes = {
---   ['CATP'] = CATPcolor,
+--   ['catp'] = catpcolor,
 -- }
 
--- config.colors = { --maetrial ocean custom
---     foreground = "#fff",
---     background = "#0f111a",
---     cursor_bg = "#ffcc00",
---     cursor_border = "#ffcc00",
---     cursor_fg = "#0f111a",
---     selection_bg = "#1f2233",
---     selection_fg = "#8f93a2",
-
---     ansi = { "#000", "#ff5370", "#81fc89", "#ffcb6b", "#82aaff", "#c792ea", "#89ddff", "#ffffff" },
---     brights = { "#546e7a", "#ff5370", "#81fc89", "#ffcb6b", "#82aaff", "#c792ea", "#89ddff", "#ffffff" },
-
---     tab_bar = {
---         background = '#0b0022',   -- This is the color of the strip that goes along the top of the window
---         active_tab = {
---             bg_color = '#0f111a', -- Matches your background color
---             fg_color = '#fff',    -- Matches your foreground color
---             italic = false,
---         },
---         inactive_tab = {
---             bg_color = '#000', -- black
---             fg_color = '#fff', -- Matches your foreground color
---             italic = false,
---         },
---         inactive_tab_hover = {
---             bg_color = '#1f2233', -- A lighter shade to act as a divider
---             fg_color = '#fff',    -- Matches your foreground color
---             italic = true,
---         }
---     },
--- }
-
-config.colors = { --drcula custom
-    foreground = "#1e1f29",
-    background = "#0f111a",
-    cursor_bg = "#bbbbbb",
-    cursor_border = "#bbbbbb",
-    cursor_fg = "#ffffff",
-    selection_bg = "#44475a",
-    selection_fg = "#ffffff",
-
-    ansi = {"#000000","#ff5555","#50fa7b","#f1fa8c","#bd93f9","#ff79c6","#8be9fd","#bbbbbb"},
-    brights = {"#555555","#ff5555","#50fa7b","#f1fa8c","#bd93f9","#ff79c6","#8be9fd","#ffffff"},
-
-    tab_bar = {
-        background = '#0b0022',   -- This is the color of the strip that goes along the top of the window
-        active_tab = {
-            bg_color = '#0f111a', -- Matches your background color
-            fg_color = '#fff',    -- Matches your foreground color
-            italic = false,
-        },
-        inactive_tab = {
-            bg_color = '#000', -- black
-            fg_color = '#fff', -- Matches your foreground color
-            italic = false,
-        },
-        inactive_tab_hover = {
-            bg_color = '#1f2233', -- A lighter shade to act as a divider
-            fg_color = '#fff',    -- Matches your foreground color
-            italic = true,
-        }
-    },
+config.color_scheme = 'mDrac'
+local DraculaColor = wezterm.color.get_builtin_schemes()['Dracula']
+DraculaColor.background = '#0f111a'
+config.color_schemes = {
+  ['mDrac'] = DraculaColor,
 }
 
 config.leader = { key = "Space", mods = "SHIFT" }
