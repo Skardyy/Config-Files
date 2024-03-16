@@ -12,8 +12,7 @@ config.font = wezterm.font({
 })
 config.font_size = 11
 config.custom_block_glyphs = false
-config.freetype_load_flags = 'NO_HINTING'
-config.front_end = "OpenGL"
+config.bold_brightens_ansi_colors = 'BrightOnly'
 
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
 config.default_cursor_style = 'SteadyBar'
@@ -70,7 +69,6 @@ config.keys = {
     { key = "8",  mods = "LEADER",       action = wezterm.action { ActivateTab = 7 } },
     { key = "9",  mods = "LEADER",       action = wezterm.action { ActivateTab = 8 } },
     { key = "&",  mods = "LEADER|SHIFT", action = wezterm.action { CloseCurrentTab = { confirm = true } } },
-    --[[ { key = "d",  mods = "LEADER",       action = wezterm.action { CloseCurrentPane = { confirm = true } } }, ]]
     { key = "x",  mods = "LEADER",       action = wezterm.action { CloseCurrentPane = { confirm = true } } },
 }
 
