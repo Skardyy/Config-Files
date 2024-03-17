@@ -10,13 +10,6 @@
       "keys": "ctrl+c"
     },
     {
-      "command": {
-        "action": "moveFocus",
-        "direction": "up"
-      },
-      "keys": "alt+k"
-    },
-    {
       "command": "paste",
       "keys": "ctrl+v"
     },
@@ -27,6 +20,13 @@
         "split": "right"
       },
       "keys": "alt+v"
+    },
+    {
+      "command": {
+        "action": "moveFocus",
+        "direction": "up"
+      },
+      "keys": "alt+k"
     },
     {
       "command": {
@@ -60,16 +60,16 @@
     },
     {
       "command": {
-        "action": "closeTab"
-      },
-      "keys": "alt+shift+7"
-    },
-    {
-      "command": {
         "action": "moveFocus",
         "direction": "right"
       },
       "keys": "alt+l"
+    },
+    {
+      "command": {
+        "action": "closeTab"
+      },
+      "keys": "alt+shift+7"
     },
     {
       "command": "closePane",
@@ -83,6 +83,8 @@
   "copyFormatting": "none",
   "copyOnSelect": false,
   "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+  "initialCols": 150,
+  "initialRows": 50,
   "newTabMenu": [
     {
       "type": "remainingProfiles"
@@ -90,12 +92,15 @@
   ],
   "profiles": {
     "defaults": {
+      "adjustIndistinguishableColors": "never",
       "colorScheme": "mDrac",
+      "cursorShape": "bar",
       "font": {
         "face": "MonaspiceNe Nerd Font Mono",
         "size": 11.0,
-        "weight": "normal"
+        "weight": "medium"
       },
+      "intenseTextStyle": "all",
       "opacity": 95,
       "useAcrylic": false
     },
@@ -327,7 +332,7 @@
       "yellow": "#808000"
     },
     {
-      "background": "#1d1d2d",
+      "background": "#1D1D2D",
       "black": "#000000",
       "blue": "#BD93F9",
       "brightBlack": "#666666",
@@ -346,9 +351,26 @@
       "purple": "#BD93F9",
       "red": "#FF5555",
       "selectionBackground": "#44475A",
-      "white": "#ccc",
+      "white": "#CCCCCC",
       "yellow": "#F1FA8C"
     }
   ],
-  "themes": []
+  "startOnUserLogin": true,
+  "theme": "d",
+  "themes": [
+    {
+      "name": "d",
+      "window": {
+        "applicationTheme": "dark"
+      },
+      "tab": {
+        "background": "terminalBackground",
+        "unfocusedBackground": "#00000000"
+      },
+      "tabRow": {
+        "unfocusedBackground": "#000",
+        "background": "#000"
+      }
+    }
+  ]
 }
