@@ -3,6 +3,22 @@
   "$schema": "https://aka.ms/terminal-profiles-schema",
   "actions": [
     {
+      "command": { "action": "resizePane", "direction": "down" },
+      "keys": "alt+shift+j"
+    },
+    {
+      "command": { "action": "resizePane", "direction": "left" },
+      "keys": "alt+shift+h"
+    },
+    {
+      "command": { "action": "resizePane", "direction": "right" },
+      "keys": "alt+shift+l"
+    },
+    {
+      "command": { "action": "resizePane", "direction": "up" },
+      "keys": "alt+shift+k"
+    },
+    {
       "command": {
         "action": "copy",
         "singleLine": false
