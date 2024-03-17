@@ -47,6 +47,10 @@ example:
 * download and install it
 * copy the .wezterm.lua into the home dir (~)
 
+# install windows-terminal
+* install wt from [microsoft store](https://apps.microsoft.com/detail/9n0dx20hk701)
+* open the settings.json and copy the file into it
+
 ## install taskbar tools
 * install ttb from [microsoft store](https://apps.microsoft.com/detail/9pf4kz2vn4w9?hl=en-US&gl=US)
 * install taskbarx zip from [github](https://github.com/ChrisAnd1998/TaskbarX/releases/latest)
