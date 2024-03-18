@@ -10,25 +10,25 @@ copy the init.lua to
 * unix - git clone https://github.com/Skardyy/nvim-conf ~/.config/nvim
 
 > \[!Note]
-> * use :PackerSync for installing all the plugins
+> * use `:PackerSync` for installing all the plugins
 > * make sure to install the dependencies for the lsp
 > * make sure to put files inside folders, so the lsp wont load all the servers
 
 
 # Install OhMyPosh  
-```diff
+```pwsh
 winget install JanDeDobbeleer.OhMyPosh -s winget
 New-Item -Path $PROFILE -Type File -Force
 oh-my-posh init pwsh | Invoke-Expression
 ```
 * create a custom theme
-```diff
+```pwsh
 notepad ~\AppData\Local\Programs\oh-my-posh\themes\myTheme.omp.json
 ```
 * paste the file in here
 * finally change the shell file
 example:
-```diff
+```pwsh
 "oh-my-posh init pwsh --config '~\AppData\Local\Programs\oh-my-posh\themes\myTheme.omp.json' | Invoke-Expression" > $PROFILE
 ```
 
@@ -55,7 +55,7 @@ example:
 # install taskbar tools
 * install ttb from [microsoft store](https://apps.microsoft.com/detail/9pf4kz2vn4w9?hl=en-US&gl=US)
 * install taskbarx zip from [github](https://github.com/ChrisAnd1998/TaskbarX/releases/latest)
-* put the taskbarx app inside the startup apps (eg shell:startup)
+* put the taskbarx app inside the startup apps (shell:startup)
 
 # install lunarvim
 * goto [lunarvim website](https://www.lunarvim.org/docs/installation)
@@ -64,5 +64,7 @@ example:
 * finally edit the config file at %localappdata%\lvim\config.lua to match the file in this repo, and do lvim to the init stage
 
 # install fzf and bat
-* winget install fzf
-* winget install sharkdp.bat
+```pwsh
+winget install fzf
+winget install sharkdp.bat
+```
