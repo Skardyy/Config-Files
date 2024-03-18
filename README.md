@@ -37,7 +37,7 @@ example:
 * install the neon mono font
 * go to the shell config file and apply it
 
-## install alarcitty
+## install alacritty
 * goto [alarcitty latest release](https://github.com/alacritty/alacritty/releases/latest)
 * download and install it
 * copy the alarcitty.toml content into %APPDATA%\alacritty\alacritty.toml
