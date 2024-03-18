@@ -9,7 +9,7 @@ copy the init.lua to
 * windows - git clone https://github.com/Skardyy/nvim-conf "$env:LOCALAPPDATA/nvim"
 * unix - git clone https://github.com/Skardyy/nvim-conf ~/.config/nvim
 
-### Remakrs  
+#### Remakrs  
 * use :PackerSync for installing all the plugins
 * make sure to install the dependencies for the lsp
 * make sure to put files inside folders, so the lsp wont load all the servers
@@ -42,12 +42,12 @@ example:
 * download and install it
 * copy the alarcitty.toml content into %APPDATA%\alacritty\alacritty.toml
 
-# install wezterm
+## install wezterm
 * goto [wezterm latest release](https://github.com/wez/wezterm/releases/latest)
 * download and install it
 * copy the .wezterm.lua into the home dir (~)
 
-# install windows-terminal
+## install windows-terminal
 * install wt from [microsoft store](https://apps.microsoft.com/detail/9n0dx20hk701)
 * open the settings.json and copy the file into it
 
