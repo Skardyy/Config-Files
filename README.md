@@ -9,10 +9,11 @@ copy the init.lua to
 * windows - git clone https://github.com/Skardyy/nvim-conf "$env:LOCALAPPDATA/nvim"
 * unix - git clone https://github.com/Skardyy/nvim-conf ~/.config/nvim
 
-### Remakrs  
-* use :PackerSync for installing all the plugins
-* make sure to install the dependencies for the lsp
-* make sure to put files inside folders, so the lsp wont load all the servers
+> \[!Note]
+> * use :PackerSync for installing all the plugins
+> * make sure to install the dependencies for the lsp
+> * make sure to put files inside folders, so the lsp wont load all the servers
+
 
 # Install OhMyPosh  
 ```diff
