@@ -1,0 +1,29 @@
+  "vim.leader": " ",
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    { "before": ["<leader>", "w"], "commands": [":w"] },
+    { "before": ["<leader>", "h"], "commands": [":noh"] },
+
+    {
+      "before": ["<leader>", "/"],
+      "after": ["V", "g", "c", "<Esc>"],
+      "commands": []
+    },
+
+    {
+      "before": ["<leader>", "b"],
+      "commands": ["workbench.action.cycleEditor"]
+    },
+    {
+      "before": ["<leader>", "c"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "/"],
+      "after": ["g", "C", "<Esc>"],
+      "commands": []
+    }
+  ]
