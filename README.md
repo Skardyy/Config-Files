@@ -7,6 +7,10 @@ copy the init.lua to
 > * use `:LazySync` for reloading plugins
 > * make sure to install the dependencies for the lsp
 
+# VscodeVim config
+* install [vscode-vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) in vscode
+* copy the following [vscode config](https://github.com/Skardyy/.dotfiles/blob/main/VscodeVim) into the json setting inside vscode
+
 # Install OhMyPosh  
 ```pwsh
 winget install JanDeDobbeleer.OhMyPosh -s winget
@@ -17,7 +21,7 @@ oh-my-posh init pwsh | Invoke-Expression
 ```pwsh
 notepad ~\AppData\Local\Programs\oh-my-posh\themes\myTheme.omp.json
 ```
-* paste the file in here
+* paste the [theme](https://github.com/Skardyy/.dotfiles/blob/main/myTheme.omp.json) in here
 * finally change the shell file
 example:
 ```pwsh
@@ -33,16 +37,16 @@ example:
 # install alacritty
 * goto [alarcitty latest release](https://github.com/alacritty/alacritty/releases/latest)
 * download and install it
-* copy the alarcitty.toml content into %APPDATA%\alacritty\alacritty.toml
+* copy the [alarcitty.toml](https://github.com/Skardyy/.dotfiles/blob/main/alarcritty.toml) content into %APPDATA%\alacritty\alacritty.toml
 
 # install wezterm
 * goto [wezterm latest release](https://github.com/wez/wezterm/releases/latest)
 * download and install it
-* copy the .wezterm.lua into the home dir (~)
+* copy the [.wezterm.lua](https://github.com/Skardyy/.dotfiles/blob/main/.wezterm.lua) into the home dir (~)
 
 # install windows-terminal
 * install wt from [microsoft store](https://apps.microsoft.com/detail/9n0dx20hk701)
-* open the settings.json and copy the file into it
+* open the settings.json and copy the [theme](https://github.com/Skardyy/.dotfiles/blob/main/windows-terminal) into it
 
 # install taskbar tools
 * install ttb from [microsoft store](https://apps.microsoft.com/detail/9pf4kz2vn4w9?hl=en-US&gl=US)
@@ -53,7 +57,7 @@ example:
 * goto [lunarvim website](https://www.lunarvim.org/docs/installation)
 * install all the prequisites
 * to install mgwin-w64 follow this [guide](https://code.visualstudio.com/docs/cpp/config-mingw)
-* finally edit the config file at %localappdata%\lvim\config.lua to match the file in this repo, and do lvim to the init stage
+* finally edit the config file at %localappdata%\lvim\config.lua to match the [file](https://github.com/Skardyy/.dotfiles/blob/main/lunarvim-config.lua) in this repo, and do lvim to the init stage
 
 # install fzf and bat
 ```pwsh
