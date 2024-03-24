@@ -13,7 +13,7 @@
 
     {
       "before": ["<leader>", "b"],
-      "commands": ["workbench.action.cycleEditor"]
+      "commands": ["workbench.action.nextEditor"]
     },
     {
       "before": ["<leader>", "c"],
