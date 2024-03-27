@@ -1,3 +1,26 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "gopls": {
+    "ui.semanticTokens": true
+  },
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.colorTheme": "Material Theme Ocean High Contrast",
+  "security.workspace.trust.untrustedFiles": "open",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontFamily": "MonaspiceNe Nerd Font Mono",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
   "vim.leader": " ",
   "vim.useSystemClipboard": true,
   "vim.hlsearch": true,
@@ -18,6 +41,14 @@
     {
       "before": ["<leader>", "c"],
       "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
@@ -27,3 +58,4 @@
       "commands": []
     }
   ]
+}
